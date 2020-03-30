@@ -6,9 +6,9 @@ import java.util.Map;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 public class DynamicDataSource extends AbstractRoutingDataSource{
-	    private Object writeDataSource; //д���Դ
+	    private Object writeDataSource; // 写库
 
-	    private Object readDataSource; //�����Դ
+	    private Object readDataSource; // 读库
 
 	    @Override
 	    public void afterPropertiesSet() {
