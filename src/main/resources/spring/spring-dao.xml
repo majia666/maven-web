@@ -66,6 +66,8 @@
         <property name="writeDataSource" ref="dataSourceWrite"></property>
         <property name="readDataSource" ref="dataSourceRead"></property>
     </bean>
+
+    <!-- 配置事务管理器-->
     <tx:annotation-driven transaction-manager="yunmanTransactionManager"/>
 
     <bean id="yunmanTransactionManager" class="com.majia.rwdb.DynamicDataSourceTransactionManager">
